@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/signUP.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="registration">
+    <div class="registration-card">
+
+        <div class="registration-card__logo">
+            <img src="./src/img/logo.svg" alt="MiraMoney">
+        </div>
+
+        <div class="registration-progress">   
+            <div class="registration-progress__line">
+                <div class="registration-progress__fill"></div>
+            </div>
+        </div>
+
+        <p class="registration-card__step">Шаг 1 из 6</p>
+
+        <h2 class="registration-card__title">
+            Регистрация и вход
+        </h2>
+
+        <p class="registration-card__subtitle">
+            Укажите номер телефона — на него придёт код для входа в личный кабинет
+        </p>
+        <form class="registration-form">
+            <div class="registration-form__input">
+                <span class="registration-form__prefix">+7</span>
+                <input
+                    type="tel"
+                    placeholder="Номер телефона"
+                    required>
+            </div>
+
+            <button class="registration-form__button" type="submit">
+                Отправить код
+            </button>
+        </form>
+    </div>
+</section>
+
+
+<section class="transfer">
+    <div class="transfer-card">
+
+        <h4 class="transfer-card__top">Перевод в Узбекистан</h4>
+
+        <div class="transfer-progress">
+            <div class="transfer-progress__line">
+                <div class="transfer-progress__fill"></div>
+            </div>
+        </div>
+
+        <p class="transfer-card__step">Шаг 1 из 6</p>
+
+        <h2 class="transfer-card__title">Куда и сколько</h2>
+
+        <form class="transfer-form">
+
+            <div class="transfer-form__country">
+                <select name="country" id="country">
+                    <option value="UZS">Узбекистан · UZS</option>
+                    <option value="KGS">Кыргызстан · KGS</option>
+                    <option value="KZT">Казахстан · KZT</option>
+                </select>
+            </div>
+
+            <div class="transfer-form__amount">
+                <label for="amount">Сумма отправления, RUB</label>
+                <input
+                    type="number"
+                    id="amount"
+                    name="amount"
+                    value="15400"
+                    min="1"
+                >
+            </div>
+
+            <p class="transfer-form__rate">
+                Курс: 1 RUB ≈ 153,66 UZS
+                <span>·</span>
+                Получит: <strong id="received">2 366 364 UZS</strong>
+            </p>
+
+            <button class="transfer-form__button" type="submit">
+                Продолжить
+            </button>
+
+        </form>
+
+    </div>
+</section>

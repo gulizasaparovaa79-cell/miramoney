@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background-color: #f7f7f5;
+}
+
+.registration {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f5;
+}
+
+.registration-card {
+    width: 450px;
+    height: 440px;
+    padding: 42px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-card__logo {
+    margin-bottom: 18px;
+}
+
+.registration-card__logo img {
+    display: block;
+    width: 115px;
+    height: auto;
+}
+
+.registration-progress {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.registration-progress__line {
+    width: 100%;
+    height: 5px;
+    background-color: #e8e8e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.registration-progress__fill {
+    width: 16.67%;
+    height: 100%;
+    background-color: #075b32;
+    border-radius: 10px;
+}
+
+.registration-card__step {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.registration-card__title {
+    margin-bottom: 18px;
+    color: #13171b;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.registration-card__subtitle {
+    margin-bottom: 24px;
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.registration-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.registration-form__input {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px;
+    background-color: #f5f5f2;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.registration-form__input:focus-within {
+    border-color: #075b32;
+}
+
+.registration-form__prefix {
+    flex-shrink: 0;
+    color: #13171b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.registration-form__input input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #13171b;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.registration-form__input input::placeholder {
+    color: #999;
+}
+
+.registration-form__button {
+    width: 100%;
+    min-height: 56px;
+    border: none;
+    border-radius: 10px;
+    background-color: #075b32;
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.registration-form__button:hover {
+    background-color: #064725;
+}
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #13171b;
+}
+
+.transfer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.transfer-card {
+    width: 400px;
+    padding: 28px 24px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeeb;
+    border-radius: 4px;
+}
+
+.transfer-card__top {
+    margin-bottom: 18px;
+    color: #075b32;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.transfer-progress {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.transfer-progress__line {
+    width: 100%;
+    height: 5px;
+    background-color: #e8e8e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.transfer-progress__fill {
+    width: 16.67%;
+    height: 100%;
+    background-color: #075b32;
+    border-radius: 10px;
+}
+
+.transfer-card__step {
+    margin-bottom: 22px;
+    color: #777777;
+    font-size: 12px;
+}
+
+.transfer-card__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.transfer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.transfer-form__country {
+    width: 100%;
+}
+
+.transfer-form__country select {
+    width: 100%;
+    height: 52px;
+    padding: 0 14px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #f5f5f2;
+    color: #13171b;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.transfer-form__amount {
+    width: 100%;
+    min-height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background-color: #f5f5f2;
+}
+
+.transfer-form__amount label {
+    color: #999999;
+    font-size: 12px;
+}
+
+.transfer-form__amount input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #13171b;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.transfer-form__rate {
+    color: #888888;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.transfer-form__rate span {
+    margin: 0 4px;
+}
+
+.transfer-form__rate strong {
+    color: #777777;
+    font-weight: 500;
+}
+
+.transfer-form__button {
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 10px;
+    background-color: #075b32;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.transfer-form__button:hover {
+    background-color: #064725;
+}
